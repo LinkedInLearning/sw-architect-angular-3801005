@@ -1,14 +1,32 @@
 # [DE-Kursname hier eintragen]
-Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-[![COURSENAME][lil-thumbnail-url] 
+Dies ist das Repository für den **LinkedIn Learning** Kurs `[COURSENAME]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+
+![COURSENAME][lil-thumbnail-url] 
+
+[Marketing Paragraph for Codespaces - without Codespaces: _remove all 3 pragraphs_ - with Codespace: _keep the right paragraph_ for the right course type (1 of 3)]
+
+[Practice It: X | All Other [Project Mojo] Courses]
+
+Dieser Kurs ist in GitHub Codespaces integriert, eine sofort verfügbare Cloud-Entwicklungsumgebung, die alle Funktionen Ihrer bevorzugten IDE bietet, ohne dass Sie einen lokalen Rechner einrichten müssen. Mit Codespaces können Sie von jedem Rechner aus und zu jeder Zeit praktische Übungen durchführen - und dabei ein Tool verwenden, das Ihnen häufig in der Praxis begegnen wird. Sehen Sie sich das Video "Wie verwende ich GitHub Codespaces mit diesem Kurs?" an, um zu erfahren, wie Sie anfangen können.  
+
+[Hands-On Introduction to X]
+
+Der beste Weg, eine Programmiersprache zu lernen, ist, sie in der Praxis anzuwenden. Deshalb ist dieser Kurs in GitHub Codespaces integriert, eine sofort verfügbare Cloud-Entwicklungsumgebung, die alle Funktionen Ihrer bevorzugten IDE bietet, ohne dass Sie einen lokalen Rechner einrichten müssen. Mit Codespaces können Sie von jedem Rechner aus und zu jeder Zeit praktische Übungen durchführen - und dabei ein Tool verwenden, das Ihnen häufig in der Praxis begegnen wird. Sehen Sie sich das Video " Wie verwende ich GitHub Codespaces mit diesem Kurs?" an, um zu erfahren, wie Sie anfangen können.  
+
+[Level Up (previously Code Challenges)] 
+
+Dieser Kurs ist in GitHub Codespaces integriert, eine sofort verfügbare Cloud-Entwicklungsumgebung, die alle Funktionen Ihrer bevorzugten IDE bietet, ohne dass Sie einen lokalen Rechner einrichten müssen. Mit Codespaces können Sie von jedem Rechner aus und zu jeder Zeit praktische Übungen durchführen - und dabei ein Tool verwenden, das Ihnen häufig in der Praxis begegnen wird. 
+Jede Folge der Code-Challenges-Serie bietet mindestens 12 praktische Übungen in verschiedenen Schwierigkeitsgraden, so dass Sie sich selbst herausfordern und das Gelernte festigen können. Schauen Sie sich das Video " Wie verwende ich GitHub Codespaces mit diesem Kurs?" an, um zu erfahren, wie man einen Codespace einrichtet und zum Einsatz bringt. 
 
 [COURSEDESCRIPTION]
 
 ## Anleitung
+
 Dieses Repository hat Branches für jedes Video im Kurs. Verwenden Sie das Ausklappmenü "Branch: ..." in GitHub um zwischen den unterschiedlichen Branches hin und her zu wechseln bzw. um bei einem spezifischen Status einzusteigen. Oder Sie fügen `/tree/BRANCH_NAME` der URL hinzu um direkt in den gewünschten Branch zu wechseln.
 
 ## Branches
+
 Die Git Branches sind passend zu den Videos im Kurs strukturiert. Die Namenskonvention lautet `Kapitel#_Video#`. Der Branch `02_03` beinhaltet zum Beispiel die Übungen für das dritte Video im zweiten Kapitel. 
 Einige Branches haben einen Anfangsstatus (`b`) für "beginning" und einen Endstatus (`e`). Der Branch mit dem `e` am Ende beinhaltet in diesem Fall stets den Code der am Ende des Videos zu sehen ist. Der `master` Branch beinhaltet den initialen Quellcode und wird nicht für die Übungen innerhalb des Kurses genutzt.
 
@@ -37,8 +55,8 @@ Dieses Problem lösen Sie wie folgt:
 
 _[Berufsbezeichnung hier eintragen]_
 
-Sehen Sie sich andere Kurse des Autors auf <<<<Link aktualisieren>>>> [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors?u=104) an.
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors) an.
 
-[lil-course-url]: https://www.linkedin.com/
-[lil-thumbnail-url]: https://
-
+[0]: # (Replace these placeholder URLs with actual course URLs)
+[lil-course-url]: https://www.linkedin.com
+[lil-thumbnail-url]: https:
