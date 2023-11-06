@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title data-test="book-card-title">{{ content.title }}</mat-card-title>
+    <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    class="book-cover-thumb"
+    [ngSrc]="content.cover || 'https://via.placeholder.com/468x800?text=No%20cover%20available'"
+    width="150"
+    height="150"
+    [attr.alt]="content.title"
+  />
+  <mat-card-content>
+    <p>
+      {{ content.abstract }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button [routerLink]="[content.isbn]">DETAILS</button>
+  </mat-card-actions>
+</mat-card>
