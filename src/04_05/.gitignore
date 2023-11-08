@@ -41,6 +41,7 @@ package-lock.json
 Thumbs.db
 
 .angular
+.nx/cache
 
 # Firebase
 .firebase
