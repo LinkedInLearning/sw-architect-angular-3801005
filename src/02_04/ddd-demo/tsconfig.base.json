@@ -10,17 +10,33 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ddd-demo/boarding/domain": ["libs/boarding/domain/src/index.ts"],
-      "@ddd-demo/booking/domain": ["libs/booking/domain/src/index.ts"],
-      "@ddd-demo/feature-cancel": ["libs/booking/feature-cancel/src/index.ts"],
-      "@ddd-demo/feature-manage": ["libs/boarding/feature-manage/src/index.ts"],
-      "@ddd-demo/feature-search": ["libs/booking/feature-search/src/index.ts"]
+      "@ddd-demo/boarding/domain": [
+        "libs/boarding/domain/src/index.ts"
+      ],
+      "@ddd-demo/booking/domain": [
+        "libs/booking/domain/src/index.ts"
+      ],
+      "@ddd-demo/feature-cancel": [
+        "libs/booking/feature-cancel/src/index.ts"
+      ],
+      "@ddd-demo/feature-manage": [
+        "libs/boarding/feature-manage/src/index.ts"
+      ],
+      "@ddd-demo/feature-search": [
+        "libs/booking/feature-search/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

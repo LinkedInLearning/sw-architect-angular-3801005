@@ -9,16 +9,18 @@ export class SearchFacade {
   private flightListSubject = new BehaviorSubject<Flight[]>([]);
   flightList$ = this.flightListSubject.asObservable();
 
-  constructor(private flightDataService: FlightDataService) {}
+  constructor(private flightDataService: FlightDataService) {
+  }
 
   load(): void {
     this.flightDataService.load().subscribe({
-      next: flightList => {
-        this.flightListSubject.next(flightList);
-      },
-      error: err => {
-        console.error('err', err);
-      }}
+        next: flightList => {
+          this.flightListSubject.next(flightList);
+        },
+        error: err => {
+          console.error('err', err);
+        }
+      }
     );
   }
 }

@@ -7,13 +7,14 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 
 @Injectable()
 export class BookCollectionEffects {
-  load = createEffect(() =>
-    this.actions$.pipe(
-      ofType(loadBooksStart),
-      exhaustMap(() => this.bookApi.getAll()),
-      map(books => loadBooksComplete({ books }))
-    )
-  );
+    load = createEffect(() =>
+        this.actions$.pipe(
+            ofType(loadBooksStart),
+            exhaustMap(() => this.bookApi.getAll()),
+            map(books => loadBooksComplete({ books }))
+        )
+    );
 
-  constructor(private actions$: Actions, private bookApi: BookApiService) { }
+    constructor(private actions$: Actions, private bookApi: BookApiService) {
+    }
 }

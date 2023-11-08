@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { exhaustMap, switchMap, tap } from 'rxjs/operators';
+import { switchMap, tap } from 'rxjs/operators';
 import { BookApiService } from '../book-api.service';
 import { Book } from '../models';
 import { MatCardModule } from "@angular/material/card";
@@ -13,7 +13,7 @@ import { deleteBookStart } from '../store/book-collection.actions';
 @Component({
     selector: 'ws-book-detail',
     standalone: true,
-    styleUrls: ['./book-detail.component.scss'],
+    styleUrls: [ './book-detail.component.scss' ],
     imports: [
         MatCardModule,
         NgOptimizedImage,

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { BookApiService } from '../book-api.service';
 import { Book } from '../models';
 import { BookCardComponent } from "../book-card/book-card.component";
 import { AsyncPipe, NgForOf } from "@angular/common";
@@ -9,7 +8,7 @@ import { bookCollection } from '../store/book-collection.selectors';
 
 @Component({
     selector: 'ws-book-list',
-    styleUrls: ['./book-list.component.scss'],
+    styleUrls: [ './book-list.component.scss' ],
     standalone: true,
     imports: [
         BookCardComponent,

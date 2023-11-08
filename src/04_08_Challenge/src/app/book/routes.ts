@@ -13,7 +13,7 @@ export const BOOK_ROUTES: Routes = [
         component: BookComponent,
         providers: [
             provideState('books', bookCollectionReducer),
-            provideEffects([BookCollectionEffects])
+            provideEffects([ BookCollectionEffects ])
         ],
         children: [
             {

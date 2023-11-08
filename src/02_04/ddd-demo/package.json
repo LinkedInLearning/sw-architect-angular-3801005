@@ -2,7 +2,7 @@
   "name": "@ddd-demo/source",
   "version": "0.0.0",
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "ng": "ng",
     "nx": "nx",
     "start": "nx serve flight-app",

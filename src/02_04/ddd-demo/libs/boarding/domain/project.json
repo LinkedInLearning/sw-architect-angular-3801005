@@ -3,12 +3,16 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/boarding/domain/src",
   "prefix": "ddd-demo",
-  "tags": ["boarding:domain"],
+  "tags": [
+    "boarding:domain"
+  ],
   "projectType": "library",
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "libs/boarding/domain/jest.config.ts",
         "passWithNoTests": true
@@ -22,7 +26,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "libs/boarding/domain/**/*.ts",

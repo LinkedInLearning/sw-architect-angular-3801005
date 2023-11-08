@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { bookNa } from '../models';
 import { BookApiService } from "../book-api.service";
-import { take } from "rxjs";
 import { Router, RouterLink } from "@angular/router";
 import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
@@ -12,7 +11,7 @@ import { Store } from '@ngrx/store';
 
 @Component({
     selector: 'ws-book-new',
-    styleUrls: ['./book-new.component.scss'],
+    styleUrls: [ './book-new.component.scss' ],
     standalone: true,
     imports: [
         ReactiveFormsModule,
@@ -27,7 +26,7 @@ export class BookNewComponent {
     form: FormGroup;
 
     constructor(private fb: FormBuilder, private bookApi: BookApiService, private router: Router,
-        private store: Store) {
+                private store: Store) {
         this.form = this.buildForm();
     }
 
@@ -41,10 +40,10 @@ export class BookNewComponent {
 
     private buildForm(): FormGroup {
         return this.fb.group({
-            isbn: ['', [Validators.required, Validators.minLength(3)]],
-            title: ['', Validators.required],
-            author: ['', Validators.required],
-            cover: ['']
+            isbn: [ '', [ Validators.required, Validators.minLength(3) ] ],
+            title: [ '', Validators.required ],
+            author: [ '', Validators.required ],
+            cover: [ '' ]
         });
     }
 }

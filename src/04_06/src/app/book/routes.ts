@@ -10,7 +10,7 @@ export const BOOK_ROUTES: Routes = [
         path: '',
         component: BookComponent,
         providers: [
-            [provideState('books', bookCollectionReducer)],
+            [ provideState('books', bookCollectionReducer) ],
         ],
         children: [
             {

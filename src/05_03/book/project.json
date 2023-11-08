@@ -8,15 +8,25 @@
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/book",
         "index": "book/src/index.html",
         "main": "book/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "book/tsconfig.app.json",
-        "assets": ["book/src/favicon.ico", "book/src/assets"],
-        "styles": ["book/src/styles.scss", "@angular/material/prebuilt-themes/indigo-pink.css"],
+        "assets": [
+          "book/src/favicon.ico",
+          "book/src/assets"
+        ],
+        "styles": [
+          "book/src/styles.scss",
+          "@angular/material/prebuilt-themes/indigo-pink.css"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "book/webpack.config.ts"
@@ -76,14 +86,21 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["book/**/*.ts", "book/**/*.html"]
+        "lintFilePatterns": [
+          "book/**/*.ts",
+          "book/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "book/jest.config.ts",
         "passWithNoTests": true

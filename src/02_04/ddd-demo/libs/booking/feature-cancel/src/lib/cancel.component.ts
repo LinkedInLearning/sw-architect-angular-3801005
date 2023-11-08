@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { CancelFacade } from '@ddd-demo/booking/domain';
 
@@ -6,10 +5,12 @@ import { CancelFacade } from '@ddd-demo/booking/domain';
   selector: 'booking-cancel',
   standalone: true,
   templateUrl: './cancel.component.html',
-  styleUrls: ['./cancel.component.scss']
+  styleUrls: [ './cancel.component.scss' ]
 })
 export class CancelComponent implements OnInit {
-  constructor(private cancelFacade: CancelFacade) {}
+  constructor(private cancelFacade: CancelFacade) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 }

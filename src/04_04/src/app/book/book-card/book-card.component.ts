@@ -6,17 +6,17 @@ import { MatButtonModule } from "@angular/material/button";
 import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'ws-book-card',
-  templateUrl: './book-card.component.html',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    NgOptimizedImage,
-    MatButtonModule,
-    RouterLink
-  ],
-  styleUrls: [ './book-card.component.scss' ]
+    selector: 'ws-book-card',
+    templateUrl: './book-card.component.html',
+    standalone: true,
+    imports: [
+        MatCardModule,
+        NgOptimizedImage,
+        MatButtonModule,
+        RouterLink
+    ],
+    styleUrls: [ './book-card.component.scss' ]
 })
 export class BookCardComponent {
-  @Input() content: Book = bookNa();
+    @Input() content: Book = bookNa();
 }

@@ -4,7 +4,7 @@ import { BoardingDomainModule } from './boarding-domain.module';
 describe('BoardingDomainModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BoardingDomainModule]
+      imports: [ BoardingDomainModule ]
     }).compileComponents();
   }));
 

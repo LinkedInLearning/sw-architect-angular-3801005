@@ -4,19 +4,18 @@ import { BookApiService } from "../book-api.service";
 import { Book } from "../models";
 import { BookCardComponent } from "../book-card/book-card.component";
 import { AsyncPipe, NgForOf } from "@angular/common";
-import { Store } from "@ngrx/store";
 
 @Component({
-  selector: "ws-book-list",
-  styleUrls: ["./book-list.component.scss"],
-  standalone: true,
-  imports: [BookCardComponent, NgForOf, AsyncPipe],
-  templateUrl: "book-list.component.html",
+    selector: "ws-book-list",
+    styleUrls: [ "./book-list.component.scss" ],
+    standalone: true,
+    imports: [ BookCardComponent, NgForOf, AsyncPipe ],
+    templateUrl: "book-list.component.html",
 })
 export class BookListComponent {
-  books$: Observable<ReadonlyArray<Book>>;
+    books$: Observable<ReadonlyArray<Book>>;
 
-  constructor(private bookApi: BookApiService) {
-    this.books$ = this.bookApi.getAll();
-  }
+    constructor(private bookApi: BookApiService) {
+        this.books$ = this.bookApi.getAll();
+    }
 }

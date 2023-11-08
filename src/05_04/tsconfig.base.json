@@ -10,13 +10,20 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "book/Routes": ["book/src/app/remote-entry/entry.routes.ts"],
-      "movie/Routes": ["movie/src/app/remote-entry/entry.routes.ts"]
+      "book/Routes": [
+        "book/src/app/remote-entry/entry.routes.ts"
+      ],
+      "movie/Routes": [
+        "movie/src/app/remote-entry/entry.routes.ts"
+      ]
     }
   },
   "angularCompilerOptions": {
@@ -25,5 +32,8 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
